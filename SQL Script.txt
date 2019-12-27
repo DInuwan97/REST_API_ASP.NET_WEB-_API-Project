@@ -1,0 +1,25 @@
+CREATE TABLE users
+(
+	UserID int identity(1,1),
+	UserName varchar(100),
+	UserEmail varchar(100),
+	UserMobile int,
+	Password varchar(100),
+	ConfirmPassword varchar(100),
+	UserDepartment varchar(100),
+	UserType varchar(50),
+	UserImage text,
+	SecretKey int,
+	Validation varchar(20)
+
+	Constraint ck_01 PRIMARY KEY(UserID)
+)
+
+  INSERT INTO users(UserName,UserEmail,UserMobile,Password,ConfirmPassword,UserDepartment,UserType,UserImage,SecretKey,Validation) VALUES
+('Mahinda Rajapakse','mahinda@gov.lk','712184518','1234','1234','MOS','Manager','Null','1234','true')
+
+  INSERT INTO users(UserName,UserEmail,UserMobile,Password,ConfirmPassword,UserDepartment,UserType,UserImage,SecretKey,Validation) VALUES
+('Gotabhaya Rajapakse','gota@gov.lk','712184518','1234','1234','MOS','Manager','Null','1234','true')
+
+  INSERT INTO users(UserName,UserEmail,UserMobile,Password,ConfirmPassword,UserDepartment,UserType,UserImage,SecretKey,Validation) VALUES
+('Basil Rajapakse','basil@gov.lk','712184518','1234','1234','MOS','Manager','Null','1234','true')
